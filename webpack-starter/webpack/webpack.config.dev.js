@@ -31,7 +31,8 @@ module.exports = merge(common, {
       {
         // test: /\.(js)$/,
         // include: Path.resolve(__dirname, '../src'),
-        // loader: 'babel-loader' //compiles everything down to an earlier version of JS v5, but some features won't work with babel; only about 70% convert down
+        // loader: 'babel-loader' //compiles everything down to an earlier version of JS v5, but some features won't work with babel
+        // only about 70% of modern JS features convert down to ES5
       },
       {
         test: /\.s?css$/i,
