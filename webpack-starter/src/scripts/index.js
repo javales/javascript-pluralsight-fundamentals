@@ -105,4 +105,5 @@ else {
 
 //Conditional Operators
 console.log( (5>4) ? 'yes' : 'no');
-console.log( 5>4 ? 'yes' : 'no');
+console.log( 5>4 ? 'yes' : 'no'); //parenthesis around comparison operator optional
+
