@@ -77,3 +77,32 @@ console.log(Number.parseInt('55'));
 console.log(Number.parseFloat('55.99ABC')); // 55.99
 
 
+// Controlling Loops
+
+// Operators
+
+//Unary Operators
+let year = 1967;
+console.log(year++);
+console.log(year);
+
+let yare = "1967";
+console.log(-yare);
+console.log(typeof(yare));
+//console.log(typeof(+yare)); //convert yare to number
+
+//Relational Operators
+let s1 = 'Zoo';
+let s2 = 'alphabet';
+//FORCE BOTH TO UPPERCASE FOR EXPECTED COMPARISON RESULT
+if (s1.toUpperCase() < s2.toUpperCase()) {
+    console.log(true);
+}
+else {
+    console.log(false);
+    console.log('Zoo is not lower than alphabet with toUpperCase');
+}
+
+//Conditional Operators
+console.log( (5>4) ? 'yes' : 'no');
+console.log( 5>4 ? 'yes' : 'no');
