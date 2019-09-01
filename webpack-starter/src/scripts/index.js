@@ -107,3 +107,44 @@ else {
 console.log( (5>4) ? 'yes' : 'no');
 console.log( 5>4 ? 'yes' : 'no'); //parenthesis around comparison operator optional
 
+// Functions and Scope
+
+function startCar(cardId) {
+    let message = 'Starting...';
+    let startFn = function turnKey() {
+        let message = 'Override';
+    };
+    startFn();
+    console.log(message); // nested message variable is out of scope due to parent function's message
+}
+startCar(123);
+
+//Function Scope
+//Block Scope
+//IIFE's
+//Closures
+//The this Keyword
+let o = {
+    carId5: 123,
+    getId5: function() {
+        console.log(this);
+        return this.carId5;
+    }
+};
+console.log( o.getId5() );
+
+// MODULE: Objects and Arrays
+
+//Introduction
+
+//Constructor Functions
+
+//Prototypes
+
+//Expanding Objects Using Prototypes
+
+//JSON - JavaScript Object Notation
+
+//Array Iteration
+
+//Summary
